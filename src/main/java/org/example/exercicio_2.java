@@ -7,11 +7,18 @@ public class exercicio_2 {
             System.out.println("Digite seu nome :");
             String nome = ler.nextLine();
 
-            System.out.println("Digite a primeira nota :");
-            double nota1 = ler.nextDouble();
+            double nota1;
+            double nota2;
 
-            System.out.println("Digite a segunda nota :");
-            double nota2 = ler.nextDouble();
+            do {
+                System.out.println("Digite a primeira nota :");
+                nota1 = ler.nextDouble();
+            }while (nota1 <0 || nota1 > 10);
+
+            do {
+                System.out.println("Digite a segunda nota :");
+                nota2 = ler.nextDouble();
+            }while (nota2 <0 || nota2 > 10);
 
             double media=(nota1 + nota2)/2;
 
